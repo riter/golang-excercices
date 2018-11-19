@@ -1,9 +1,9 @@
 Files description:
 =================
-wc              						Binary file, executable from command line.
-sortAndPrintWordByFrecuence.go          Source code, in go language.
-words.txt       						Input file.
-output.txt  							Output file.
+sortAndPrintWordByFrecuence           Binary file, executable from command line.
+sortAndPrintWordByFrecuence.go        Source code, in go language.
+words.txt       						          Input file.
+output.txt  							            Output file.
 
 How to compile:
 ==============
