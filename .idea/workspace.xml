@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c32ca45e-19a3-4ec5-b1e9-c8505b29633e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground_sortAndPrintWordByFrecuence" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground_sortAndPrintWordByFrecuence.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAndPrintWordByFrecuence" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAndPrintWordByFrecuence.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/documents.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listStorage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/IMG_7504.PNG" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +16,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/listStorage.go">
+        <entry file="file://$PROJECT_DIR$/documents.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="544">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
               <folding>
-                <element signature="e#27#75#0" expanded="true" />
+                <element signature="n#!!block;n#GetDocuments#0" />
+                <element signature="n#!!block;n#mapFileInfoToDocument#0" />
+                <element signature="n#!!block;n#hashFileMD5#0" />
               </folding>
             </state>
           </provider>
@@ -48,12 +48,13 @@
       <list>
         <option value="$PROJECT_DIR$/litStorage.http" />
         <option value="$PROJECT_DIR$/listStorage.go" />
+        <option value="$PROJECT_DIR$/documents.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="236" />
-    <option name="y" value="35" />
+    <option name="x" value="189" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="966" />
   </component>
@@ -63,7 +64,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,6 +75,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -101,38 +102,47 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="go build listStorage.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build documents.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang-excercices" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/listStorage.go" />
+      <filePath value="$PROJECT_DIR$/documents.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build listStorage.go" />
+        <item itemvalue="Go Build.go build documents.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="35" width="1400" height="966" extended-state="0" />
+    <frame x="189" y="23" width="1400" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32951945" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993135" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21395881" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25171626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32951945" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32951945" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -147,6 +157,7 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/auth-requests.http">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/litStorage.http" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -154,13 +165,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/litStorage.http" />
-    <entry file="file://$PROJECT_DIR$/listStorage.go">
+    <entry file="file://$PROJECT_DIR$/documents.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="544">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
           <folding>
-            <element signature="e#27#75#0" expanded="true" />
+            <element signature="n#!!block;n#GetDocuments#0" />
+            <element signature="n#!!block;n#mapFileInfoToDocument#0" />
+            <element signature="n#!!block;n#hashFileMD5#0" />
           </folding>
         </state>
       </provider>
