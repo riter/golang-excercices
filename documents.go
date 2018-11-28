@@ -25,7 +25,7 @@ func main() {
 	r.HandleFunc("/documents", GetDocuments).Methods("GET")
 	r.HandleFunc("/documents/{id}",GetDocumentById).Methods("GET")
 	r.HandleFunc("/documents",createDocument).Methods("POST")
-	r.HandleFunc("/documents/{id}",deleteDocument).Methods("DELETE")
+	r.HandleFunc("/documents/{id}",deleteDocumentById).Methods("DELETE")
 
 	log.Fatal(http.ListenAndServe(":9000", r))
 }
@@ -70,7 +70,7 @@ func createDocument(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(document)
 }
 
-func deleteDocument(w http.ResponseWriter, r *http.Request) {
+func deleteDocumentById(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
 
